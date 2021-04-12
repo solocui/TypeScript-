@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>类装饰器演示</title>
+        <script src="node_modules/systemjs/dist/system.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    </head>
+    <body>        
+        <h2>--控制台查看--</h2>
+        <script>
+            SystemJS.config({
+                baseURL: '/',
+                defaultJSExtensions: true
+            });
+            System.import('./main').then(function(){console.log('loaded');}).catch(function(err){ console.error(err); });
+        </script>
+    </body>
+</html>

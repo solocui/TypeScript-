@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TypeScript小试</title>
+        <!-- <link rel="stylesheet" type="text/css" href="" /> -->
+        <script src="./dist/main.js" charset="UTF-8"></script>
+        <script>
+            function showThem(){
+                let humans = [{"firstName":"崔","lastName":"传新","age":36},{"firstName":"秦","lastName":"始皇","age":4000},{"firstName":"汉","lastName":"武帝","age":3600}];
+                document.getElementById("humansDetail").innerHTML = showDetail(humans);
+            }
+        </script>
+    </head>
+    <style type="text/css"></style>
+    <body>
+        <button value="ClickMe" onclick="showThem()">ClickMe</button>
+        <div id="humansDetail">
+        </div>
+    </body>
+    
+</html>
